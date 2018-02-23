@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="-20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/bar_background"
+        android:paddingTop="@dimen/linear_layout_toolbar_padding_top"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <ImageView
+            android:id="@+id/iv_icon_toolbar"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/navigation_headicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/main_title"
+            android:text="消息"
+            android:textColor="#fefefe"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_msg_toolbar"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/top_msg"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <include layout="@layout/content_main" />
+
+</LinearLayout>

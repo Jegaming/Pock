@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/item_selector"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="2"
+                android:id="@+id/iv_pica_artcle"
+                android:src="@drawable/use_support"
+                android:scaleType="centerCrop"
+                android:layout_width="0dp"
+                android:layout_height="110dp" />
+
+            <TextView
+                android:layout_width="05dp"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:layout_weight="2"
+                android:id="@+id/iv_picb_artcle"
+                android:src="@drawable/use_ticket"
+                android:scaleType="centerCrop"
+                android:layout_width="0dp"
+                android:layout_height="110dp" />
+        </LinearLayout>
+
+        <TextView
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_desc_artcle"
+            android:maxLines="2"
+            android:text="我们从一个单纯的孩子开始，用热情和活力对待着成长，在成长的过程中，逐渐穿上掩护自己的乔装品，然后鲜衣怒马的招摇。随着年纪的渐长，看惯了云烟飞扰的流光溢彩，又和自己和世界讲和，回到最初的样子。"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="8sp"
+                android:textColor="@color/colorLightWord"
+                android:id="@+id/tv_time_article"
+                android:layout_alignParentLeft="true"
+                android:text="2017-05-21 晚上 11:27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ARTICLE_TEXT_LIKE"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:text="人已赞"
+                android:textColor="@color/colorLightWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_like_article"
+                android:layout_toLeftOf="@id/ARTICLE_TEXT_LIKE"
+                android:text="1250"
+                android:textSize="8sp"
+                android:textColor="@color/colorLightWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/like"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/tv_like_article"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--分割线-->
+    <TextView
+        android:background="@color/colorGrayDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

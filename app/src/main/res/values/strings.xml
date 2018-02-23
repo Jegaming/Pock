@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">口袋</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="long_article">飞机降落之前，对南非的印象除了曼德拉与随地可捡的钻石，更多的是停留满目苍凉、贫瘠，到处充满野蛮、污秽以及在烈日暴晒下广袤无垠的荒芜砂砾的上那些饿死病死的漆黑赤身、骨瘦如柴的饥饿难民······然而十日亲历，才知道，自己对它的误解竟然有那么的深</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

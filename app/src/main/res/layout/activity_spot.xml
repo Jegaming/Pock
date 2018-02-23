@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    app:elevation="0dp"
+    android:layout_marginTop="-20dp"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/bar_background"
+        android:paddingTop="@dimen/linear_layout_toolbar_padding_top"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <ImageView
+            android:id="@+id/iv_back_spot"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/main_title"
+            android:text="景点"
+            android:textColor="#fefefe"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_setting_spot"
+            android:layout_gravity="center_vertical"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_marginTop="-2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/spot_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:gravity="center_vertical"
+            android:background="@drawable/search_edittext_background"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:src="@drawable/search"
+                android:layout_width="26dp"
+                android:layout_height="26dp" />
+
+            <EditText
+                android:background="@null"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

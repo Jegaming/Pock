@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xiyou3g.rainbower.pocket.util.CircleImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="张三"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="简介："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="暂无介绍"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/colorGrayDivider"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+
+            <ImageView
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="个人资料"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/colorGrayDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:text="姓名"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="李老大"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/colorGrayDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:text="学校"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="西安没电大学"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/colorGrayDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:text="专业"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="装备与制造"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/colorGrayDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:text="学号"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="123456"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/colorGrayDivider"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+
+            <ImageView
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/user_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="全部订单"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/colorGrayDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/user_order_topay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:text="待付款"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/user_order_touse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:text="待使用"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/user_order_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:text="已使用"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/user_order_aftersale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:text="售后"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/colorGrayDivider"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+
+            <ImageView
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/user_scenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="我的游记"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/colorGrayDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/use_support"
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp" />
+
+                <TextView
+                    android:layout_width="05dp"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/use_ticket"
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp" />
+            </LinearLayout>
+
+            <TextView
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_desc_artcle"
+                android:maxLines="2"
+                android:text="我们从一个单纯的孩子开始，用热情和活力对待着成长，在成长的过程中，逐渐穿上掩护自己的乔装品，然后鲜衣怒马的招摇。随着年纪的渐长，看惯了云烟飞扰的流光溢彩，又和自己和世界讲和，回到最初的样子。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="8sp"
+                    android:textColor="@color/colorLightWord"
+                    android:layout_alignParentLeft="true"
+                    android:text="2017-05-21 晚上 11:27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/ARTICLE_TEXT_LIKE"
+                    android:layout_alignParentRight="true"
+                    android:textSize="8sp"
+                    android:text="人已赞"
+                    android:textColor="@color/colorLightWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_like_article"
+                    android:layout_toLeftOf="@id/ARTICLE_TEXT_LIKE"
+                    android:text="1250"
+                    android:textSize="8sp"
+                    android:textColor="@color/colorLightWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/like"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/tv_like_article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/colorGrayDivider"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+
+            <ImageView
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/user_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="系统设置"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/colorGrayDivider"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+</LinearLayout>

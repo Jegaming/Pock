@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/anc_home"
+        android:layout_centerVertical="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:id="@+id/tv_anc_home"
+        android:layout_centerInParent="true"
+        android:lineSpacingExtra="4sp"
+        android:gravity="center"
+        android:text="好消息！\n天士力大药房四倍积分啦"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

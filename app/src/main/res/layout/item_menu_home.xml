@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:background="#ffffff"
+    android:paddingTop="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_menu_ticket"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/home_menu_ticket"
+            android:scaleType="centerInside"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="火车票"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:background="#6e6e6e"
+        android:layout_width="1dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_menu_spot"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/home_menu_spot"
+            android:scaleType="centerInside"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="景点娱乐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:background="#6e6e6e"
+        android:layout_width="1dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_menu_sup"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/home_menu_sup"
+            android:scaleType="centerInside"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="第三方"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="0dp" />
+
+</LinearLayout>
