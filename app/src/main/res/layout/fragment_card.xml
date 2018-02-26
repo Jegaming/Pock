@@ -1,225 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="#dedede"
+
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#dedede">
+
+  <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:divider="@drawable/card_linearlayout_divider"
+    android:orientation="vertical"
+    android:showDividers="middle">
 
-    <ScrollView
-        android:layout_width="match_parent"
+    <!--顶部卡片-->
+    <LinearLayout
+      style="@style/CardItemLayout"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <FrameLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+          android:layout_width="135dp"
+          android:layout_height="185dp"
+          android:src="#fefefe"/>
+
+        <ImageView
+          android:layout_width="125dp"
+          android:layout_height="175dp"
+          android:layout_gravity="center"
+          android:scaleType="centerCrop"
+          android:src="@drawable/yicunxiang"/>
+      </FrameLayout>
+
+      <TextView
+        android:background="@color/colorGrayDivider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"/>
+
+      <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+        <LinearLayout style="@style/CardItemLayout">
 
-        <LinearLayout
-            android:divider="@drawable/card_linearlayout_divider"
-            android:showDividers="middle"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#818080"
+            android:text="姓名："/>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp">
-
-                <FrameLayout
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:src="#fefefe"
-                        android:layout_width="135dp"
-                        android:layout_height="185dp" />
-
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:src="@drawable/yicunxiang"
-                        android:scaleType="centerCrop"
-                        android:layout_width="125dp"
-                        android:layout_height="175dp" />
-                </FrameLayout>
-
-                <ImageView
-                    android:src="@drawable/valid"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_gravity="center"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp" />
-
-
-            </FrameLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="姓名"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="斗地主"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="性别"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="男"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="民族"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="汉族"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="出生日期"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="2017年5月12日"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:background="#fbfbfb"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="40dp">
-
-                <TextView
-                    android:text="身份证号"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:gravity="center_vertical"
-                    android:text="610121201705122588"
-                    android:textSize="18sp"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <TextView
-                android:background="#dedede"
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="学校"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="西安邮电大学"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="院系"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="装备与制造学院"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="专业"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="材料工程"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="班级"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="材料1401"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="学号"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="2517251431"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="生源地"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="西安"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <TextView
-                android:background="#dedede"
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="入学日期"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="2014年9月1日"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="发证日期"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="2014年10月1日"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/CardItemLayout">
-
-                <TextView
-                    android:text="有效日期"
-                    style="@style/CardItemLeft" />
-
-                <TextView
-                    android:text="2018年7月30日"
-                    style="@style/CardItemRight" />
-            </RelativeLayout>
+          <TextView
+            style="@style/CardItemRight"
+            android:text="XXX"/>
         </LinearLayout>
-    </ScrollView>
+        <LinearLayout style="@style/CardItemLayout">
 
-</LinearLayout>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#818080"
+            android:text="学号："/>
+
+          <TextView
+            style="@style/CardItemRight"
+            android:text="05192059"/>
+        </LinearLayout>
+        <LinearLayout style="@style/CardItemLayout">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#818080"
+            android:text="学校："/>
+
+          <TextView
+            style="@style/CardItemRight"
+            android:text="西安邮电大学"/>
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+
+    <!--基本资料-->
+    <LinearLayout style="@style/CardItemLayout">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#505050"
+        android:textSize="20sp"
+        android:text="基本资料"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/CardItemLayout">
+
+      <TextView
+        style="@style/CardItemLeft"
+        android:text="性别："/>
+
+      <TextView
+        style="@style/CardItemRight"
+        android:text="女"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/CardItemLayout">
+
+      <TextView
+        style="@style/CardItemLeft"
+        android:text="身份证号："/>
+
+      <TextView
+        style="@style/CardItemRight"
+        android:text="610429xxxxxxxx2135"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/CardItemLayout">
+
+      <TextView
+        style="@style/CardItemLeft"
+        android:text="联系电话："/>
+
+      <TextView
+        style="@style/CardItemRight"
+        android:text="137xxxx5268"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/CardItemLayout">
+
+      <TextView
+        style="@style/CardItemLeft"
+        android:text="电子邮箱："/>
+
+      <TextView
+        style="@style/CardItemRight"
+        android:text="36554892@qq.com"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/CardItemLayout">
+
+      <TextView
+        style="@style/CardItemLeft"
+        android:text="家庭住址："/>
+
+      <TextView
+        style="@style/CardItemRight"
+        android:text="西安市灞桥区"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/CardItemLayout"
+      android:layout_height="wrap_content"
+      android:paddingRight="10dp"
+      android:orientation="vertical">
+
+      <TextView
+        style="@style/CardItemLeft"
+        android:text="火车票："/>
+
+      <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        
+        <LinearLayout
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent">
+
+          <TextView
+            style="@style/CardItemRight"
+            android:text="乌鲁木齐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+          <TextView
+            style="@style/CardItemRight"
+            android:text="——"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+          <TextView
+            style="@style/CardItemRight"
+            android:text="乌鲁木齐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+        <ImageView
+          android:layout_alignParentRight="true"
+          android:src="@drawable/test_qrcode"
+          android:layout_width="150dp"
+          android:layout_height="150dp"/>
+      </RelativeLayout>
+
+
+    </LinearLayout>
+  
+
+    
+  </LinearLayout>
+</ScrollView>
